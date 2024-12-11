@@ -415,9 +415,9 @@ public static class QuantumMigration {
     const string DestinationFolder = "Assets/QuantumUser/Simulation";
 
 
-    if (!File.Exists(Path.Combine(fullFolderPath, ProjectFileName))) {
+    /*if (!File.Exists(Path.Combine(fullFolderPath, ProjectFileName))) {
       throw new InvalidOperationException($"{ProjectFileName} not found in {folder}");
-    }
+    }*/
 
     var ignoredFolders = new List<string> {
       Path.Combine(fullFolderPath, "bin"),
